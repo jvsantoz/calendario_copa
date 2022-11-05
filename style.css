@@ -12,6 +12,7 @@
     --card-bg-color: #eeeeee;
     --hours-text-color: #1d1c19;
     --date-text-color: #e21346;
+    --background-body-size: cover;
     --bg: url(./assets/bg-rosa2.jpg);
 }
 
@@ -21,6 +22,7 @@
     --card-bg-color: #1d1c19;
     --hours-text-color: #E1E1E6;
     --date-text-color: #f7dd43;
+    --background-body-size: 100%;
     --bg: url(./assets/bg-yellow.svg);
 }
 
@@ -30,6 +32,7 @@ body.blue {
     --card-bg-color: #202024;
     --hours-text-color: #E1E1E6;
     --date-text-color: #f7dd43;
+    --background-body-size: 100%;
     --bg: url(./assets/bg-blue.svg);
 }
 
@@ -39,6 +42,7 @@ body.green {
     --card-bg-color: #1a1f1b;
     --hours-text-color: #E1E1E6;
     --date-text-color: #f7dd43;
+    --background-body-size: 100%;
     --bg: url(./assets/bg-green.svg);
 }
 
@@ -60,7 +64,7 @@ body {
     background-image: var(--bg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: var(--background-body-size);
 }
 
 body * {
@@ -173,7 +177,7 @@ header img:hover {
 
 @media (min-width: 1000px) {
     #cards {
-        max-width: 670px;
+        max-width: 1012px;
         flex-direction: row;
         flex-wrap: wrap;
     }
