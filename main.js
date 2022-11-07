@@ -1,3 +1,35 @@
+const button = document.querySelector('.js-theme-default')
+if (button) {
+    button.addEventListener('click', event => {
+        event.preventDefault()
+        document.body.setAttribute('class', '')
+    })
+};
+
+const buttonGreen = document.querySelector('.js-theme-green')
+if (buttonGreen) {
+    buttonGreen.addEventListener('click', event => {
+        event.preventDefault()
+        document.body.setAttribute('class', 'green')
+    })
+};
+
+const buttonBlue = document.querySelector('.js-theme-blue')
+if (buttonBlue) {
+    buttonBlue.addEventListener('click', event => {
+        event.preventDefault()
+        document.body.setAttribute('class', 'blue')
+    })
+};
+
+const buttonYellow = document.querySelector('.js-theme-yellow')
+if (buttonYellow) {
+    buttonYellow.addEventListener('click', event => {
+        event.preventDefault()
+        document.body.setAttribute('class', 'yellow')
+    })
+};
+
 function createGame(player1, hour, player2) {
     return `
     <li>
@@ -26,7 +58,7 @@ document.querySelector("#cards").innerHTML =
         createCard("20/11", "domingo", 
             createGame("qatar", "13:00", "ecuador"))+
             
-        createCard("21/11", "segunda", 
+        createCard("21/11", "segunda",
             createGame("england", "10:00", "iran") +
             createGame("senegal", "13:00", "netherlands") +
             createGame("united_states", "16:00", "wales")) +
