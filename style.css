@@ -73,7 +73,7 @@ body * {
 #app {
     width: fit-content;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 
 .container_theme {
@@ -81,16 +81,17 @@ body * {
     justify-content: center;
     align-items: end;
     gap: 45px;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
 }
 
 .container_theme img {
-    max-width: 380px;
+    max-width: 200px;
 }
 
 .btn-theme {
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
+    margin-left: 1rem;
     
     cursor: pointer;
     
@@ -220,6 +221,12 @@ header img:hover {
     }
 }
 
+@media (min-width: 992px) {
+    #app {
+        padding-top: 40px;
+    }
+}
+
 @media (min-width: 992px){
     header {
         margin-bottom: 18px;
@@ -230,6 +237,26 @@ header img:hover {
 @media (min-width: 992px) {
     header img {
         max-width: 450px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container_theme img {
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container_theme {
+        margin-bottom: 27px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-theme {
+        width: 22px;
+        height: 22px;
+        margin-left: 0.5rem;
     }
 }
 
