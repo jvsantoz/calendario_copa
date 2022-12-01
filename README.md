@@ -33,6 +33,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Calendário da Copa é um projeto que mostra os jogos da Copa de 2022.
 
+##⚡Link do projeto: https://jvsantoz.github.io/calendario_copa/
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
